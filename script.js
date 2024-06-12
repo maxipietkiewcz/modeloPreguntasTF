@@ -15,26 +15,26 @@ const initQnA = async () => {
     ];
 
     const questions = [
-      "What is a closure in JavaScript?",
+      "what is javascript?",
       "Explain the difference between let and var.",
       "What is the purpose of the `this` keyword?",
     ];
 
     const predefinedAnswers = [
       [
-        "My dog is black", // Wrong answer
-        "A closure is a variable that is not used outside of its function.", // Acceptable answer
-        "A closure is a function having access to the parent scope, even after the parent function has closed.", // Correct answer
+        "My dog is black",
+        "A closure is a variable that is not used outside of its function.",
+        "A closure is a function having access to the parent scope, even after the parent function has closed.",
       ],
       [
-        "The car is blue", // Wrong answer
-        "var is used to declare variables.", // Acceptable answer
-        "let is block-scoped, while var is function-scoped. let cannot be redeclared in the same scope.", // Correct answer
+        "The car is blue",
+        "var is function scoped and is raised initializing as undefined, allowing re-declaration; let is block-scoped, is raised without initialization, and does not allow re-declaration.",
+        "let is block-scoped, while var is function-scoped. let cannot be redeclared in the same scope.",
       ],
       [
-        "I love JavaScript", // Wrong answer
-        "`this` refers to the current function.", // Acceptable answer
-        "JavaScript is a programming language used to build interactive websites.", // Incorrect answer
+        "I love JavaScript",
+        "The this keyword refers to the object from which a function is invoked. Its value depends on the context in which the function is called, allowing access to properties and methods of the object in question.",
+        "JavaScript is a programming language used to build interactive websites.",
       ],
     ];
 

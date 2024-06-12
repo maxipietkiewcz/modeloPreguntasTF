@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Knowledge Evaluation</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div id="main">
@@ -14,14 +14,29 @@
         <h2>Answer the following questions:</h2>
         <form id="qa-form">
           <h3>Question 1</h3>
-          <div>What is a closure in JavaScript?</div>
-          <textarea id="user_answer_1"></textarea><br />
+          <div>What is JavaScript?</div>
+          <textarea
+            placeholder="Type your answer here"
+            id="user_answer_1"
+          ></textarea
+          ><br />
+
           <h3>Question 2</h3>
           <div>Explain the difference between let and var.</div>
-          <textarea id="user_answer_2"></textarea><br />
+          <textarea
+            placeholder="Type your answer here"
+            id="user_answer_2"
+          ></textarea
+          ><br />
+
           <h3>Question 3</h3>
           <div>What is the purpose of the `this` keyword?</div>
-          <textarea id="user_answer_3"></textarea><br />
+          <textarea
+            placeholder="Type your answer here"
+            id="user_answer_3"
+          ></textarea
+          ><br />
+
           <button type="button" onclick="evaluateAnswers()">
             Submit Answers
           </button>

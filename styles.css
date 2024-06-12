@@ -1,62 +1,104 @@
 /* Estilos para el cuerpo del documento */
 body {
-  font-family: Arial, sans-serif; /* Cambiar la fuente del texto */
+  font-family: "Arial", sans-serif; /* Cambiar la fuente del texto */
   background-color: #f0f8ff; /* Fondo celeste */
   color: #333; /* Texto oscuro */
+  margin: 0; /* Eliminar margen por defecto */
+  padding: 0; /* Eliminar padding por defecto */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  min-height: 100vh; /* Altura mínima completa de la ventana */
+  background-image: url("jss.jpg"); /* Agregar imagen de fondo */
+  background-size: cover; /* Ajustar tamaño de la imagen para cubrir el fondo */
+  background-position: center; /* Centrar la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen */
 }
 
-/* Estilos para los encabezados h1 y h2 */
+/* Estilos para los encabezados h1, h2 y h3 */
 h1,
 h2,
 h3 {
   color: #0047ab; /* Azul */
+  margin-top: 0;
+  text-align: center; /* Centrados */
 }
 
-/* Estilos para los enlaces */
-a {
-  color: #007bff; /* Azul brillante */
-  text-decoration: none; /* Sin subrayado */
-}
-
-a:hover {
-  text-decoration: underline; /* Subrayado al pasar el mouse */
-}
-
-/* Estilos para los contenedores principales */
+/* Estilos para el contenedor principal */
 #main {
-  background-color: #fff; /* Fondo blanco */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Fondo blanco con menos transparencia */
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 600px; /* Ancho máximo */
+  width: 100%; /* Ancho completo */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+  overflow: auto; /* Habilitar desplazamiento si el contenido es demasiado grande */
 }
 
-/* Estilos para los contenedores de descripción */
+/* Estilos para el contenedor de descripción */
 #description {
   margin-bottom: 20px;
 }
 
-/* Estilos para los elementos de lista */
-ul,
-ol {
-  margin-left: 20px;
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Estilos para los elementos de respuesta */
-span {
-  font-weight: bold; /* Texto en negrita */
+/* Estilos para los textos dentro del formulario */
+form div {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #0047ab; /* Texto azul oscuro */
+}
+
+/* Estilos para las áreas de texto */
+textarea {
+  padding: 10px;
+  border: 1px solid #0047ab; /* Borde azul oscuro */
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Ajustar ancho */
+  resize: vertical; /* Permitir solo redimensionamiento vertical */
+  font-family: "Arial", sans-serif;
+  background-color: #e6f7ff; /* Fondo azul claro */
+  color: #333; /* Texto oscuro */
 }
 
 /* Estilos para los botones */
 button {
-  background-color: #007bff; /* Fondo azul brillante */
+  background-color: #0047ab; /* Fondo azul oscuro */
   color: #fff; /* Texto blanco */
   border: none; /* Sin borde */
   border-radius: 5px; /* Bordes redondeados */
-  padding: 8px 16px; /* Relleno */
+  padding: 10px; /* Relleno */
   cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  margin-top: 10px;
+  align-self: center; /* Centrar el botón */
 }
 
 button:hover {
-  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+  background-color: #002f6c; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para los resultados */
+#results {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #0047ab; /* Borde superior azul oscuro */
+  background-color: #f0f8ff; /* Fondo celeste */
+}
+
+/* Estilos adicionales */
+#loadingQnA {
+  text-align: center; /* Centrados */
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #0047ab; /* Texto azul oscuro */
 }
